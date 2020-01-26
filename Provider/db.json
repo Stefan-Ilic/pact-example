@@ -1,0 +1,76 @@
+{
+    "customers": [
+        {
+            "id": 1,
+            "name": "Alice",
+            "address": "Fakestreet 12",
+            "birthday": "1980-01-01",
+            "email": "alice@mail.com",
+            "status": "married",
+            "financialProducts": [
+                {
+                    "id": 4,
+                    "name": "Share",
+                    "balance": 4,
+                    "productCode": "ABC1",
+                    "interestRate": 1.2
+                },
+                {
+                    "id": 5,
+                    "name": "Bond",
+                    "balance": 5,
+                    "productCode": "ABC2",
+                    "interestRate": 1.3
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Bob",
+            "address": "Fakestreet 13",
+            "birthday": "1980-02-02",
+            "email": "bob@mail.com",
+            "status": "married",
+            "financialProducts": [
+                {
+                    "id": 4,
+                    "name": "Share",
+                    "balance": 4,
+                    "productCode": "ABC1",
+                    "interestRate": 1.2
+                },
+                {
+                    "id": 6,
+                    "name": "ETF",
+                    "balance": 6,
+                    "productCode": "ABC3",
+                    "interestRate": 1.4
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Charlie",
+            "address": "Fakestreet 14",
+            "birthday": "1980-03-03",
+            "email": "charlie@mail.com",
+            "status": "single",
+            "financialProducts": [
+                {
+                    "id": 6,
+                    "name": "ETF",
+                    "balance": 6,
+                    "productCode": "ABC3",
+                    "interestRate": 1.4
+                },
+                {
+                    "id": 5,
+                    "name": "Bond",
+                    "balance": 5,
+                    "productCode": "ABC2",
+                    "interestRate": 1.3
+                }
+            ]
+        }
+    ]
+}

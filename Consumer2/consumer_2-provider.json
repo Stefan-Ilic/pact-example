@@ -1,0 +1,64 @@
+{
+  "consumer": {
+    "name": "Consumer 2"
+  },
+  "provider": {
+    "name": "Provider"
+  },
+  "interactions": [
+    {
+      "description": "a request for all customers and the balances of their financial products",
+      "providerState": "customers exist and have financialProducts with balances",
+      "request": {
+        "method": "get",
+        "path": "/customers"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+        },
+        "body": [
+          {
+            "name": "Alice",
+            "financialProducts": [
+              {
+                "balance": 4
+              },
+              {
+                "balance": 5
+              }
+            ]
+          },
+          {
+            "name": "Bob",
+            "financialProducts": [
+              {
+                "balance": 4
+              },
+              {
+                "balance": 6
+              }
+            ]
+          },
+          {
+            "name": "Charlie",
+            "financialProducts": [
+              {
+                "balance": 6
+              },
+              {
+                "balance": 5
+              }
+            ]
+          }
+        ]
+      },
+      "metadata": null
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}

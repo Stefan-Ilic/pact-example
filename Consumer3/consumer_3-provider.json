@@ -1,0 +1,46 @@
+{
+  "consumer": {
+    "name": "Consumer 3"
+  },
+  "provider": {
+    "name": "Provider"
+  },
+  "interactions": [
+    {
+      "description": "a request for customer 1 and their financialProducts",
+      "providerState": "customer 1 exists and has financialProducts",
+      "request": {
+        "method": "get",
+        "path": "/customers/1"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+        },
+        "body": {
+          "name": "Alice",
+          "financialProducts": [
+            {
+              "name": "Share",
+              "balance": 4,
+              "productCode": "ABC1",
+              "interestRate": 1.2
+            },
+            {
+              "name": "Bond",
+              "balance": 5,
+              "productCode": "ABC2",
+              "interestRate": 1.3
+            }
+          ]
+        }
+      },
+      "metadata": null
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}
